@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Web Developer, HTML, CSS, JavaScript, Web Design"/>
+    <meta name="author" content="Tomasz Preficz" />
+    <link rel="icon" type="image/x-icon" href="/Nightmare/Logo/Ghost-favicon-white.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="/Nightmare/ngm.css">
+    <script src="/Nightmare/ngm.js" defer></script>
+
+    <title>Nightmare Generator Machine</title>
+</head>
+
+<body>
+
+<!-- BACKGROUND IMAGE -->
+<div class="container-fluid blurBG">
+    <a href="javascript:BlurFunction(0);"></a>
+    <bg-image>
+        <a href="javascript:BlurFunction(1);"></a>
+        <img src="" class="img-fluid bgPicture" alt="">
+    </bg-image>
+</div>
+
+<!-- NIGHTMARE BOX -->
+<div class="container-fluid text-center blurBG">
+    <a href="javascript:BlurFunction(2);"></a>
+    <div class="box">
+        <h2>NIGHTMARE GENERATOR MACHINE</h2>
+
+        <div class="container">
+            <p class="recipients">
+                Below is a modest list of recipients to whom nightmares can be applied.
+                You can also personalise it by adding unique recipient!
+            </p>
+        </div>
+        
+        <!-- Search Box. Default list of people to apply nightmares to. -->
+        <div class="row justify-content-center my-2">
+            <div class="col-lg-6">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control sName" placeholder="Search 'Name'" aria-label="Text input with dropdown button" id="dropdown">
+                    <button class="btn btn-outline-dark dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                    <!-- Dropdown List -->
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item VP" href="#" id="Putin">Vladimir Putin</a></li>
+                        <li><a class="dropdown-item AL" href="#" id="Lukashenko">Alexander Lukashenko</a></li>
+                        <li><a class="dropdown-item XJ" href="#" id="Jinping">Xi Jinping</a></li>
+                        <li><a class="dropdown-item KJU" href="#" id="Un">Kim Jong Un</a></li>
+                    </ul>
+                    <!-- Input and Button to add another person. -->
+                    <input type="text" class="form-control tName" placeholder="Type 'Name'" aria-label="Another person" id="anotherPerson">
+                    <button class="btn btn-outline-dark addRecipient btn-sm" type="button" aria-expanded="false" id="addRecipient">Add recipient!</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Text Area -->
+        <div class="container">
+            <p class="machine">
+                I am a self-aware machine that reads emotional intentions. Apart from your addressee's name, 
+                <br>I do not require any other personal information. I operate based on the principle of <br>
+                quantum entanglement and free will-induced telepathy. Start typing commands in the <br>
+                user-friendly nightmare box below, and my mind-reading ability will connect with your subject.
+            </p>
+        </div>
+
+        <!-- User friendly, personalised nightmare text box. -->
+        <div class="row justify-content-center my-2">
+            <div class="col-lg-6">
+                <form action="/contact">
+                    <div class="form-floating my-2">
+                        <textarea name="message" id="message" style="height: 100px" class="form-control textArea" placeholder="Type"></textarea>
+                        <label for="message" class="form-check-label typeWish z-index1">Type in your personalised wish:</label>
+                    </div>
+                </form>
+            </div>
+        </div>  
+
+        <!-- Nightmare Mood -->
+        <div class="container">
+            <h3 class="h3">PICK YOUR FAVOURITE NIGHTMARE MOOD</h3>
+        </div>
+
+        <!-- Nightmare mood: Light, Moderate, Severe, Catatonic. -->
+        <div class="row">
+            <div class="col-sm">
+                <img src="/Nightmare/Img/29-Light.jpg" class="img-fluid imgLight" alt="Light Mood with a spooky bunny image">
+                <input type="radio" id="LightMood" name="button1" value="LightMood">
+                <label for="LightMood" class="LightMood">Light</label>
+            </div>
+            <div class="col-sm">
+                <img src="/Nightmare/Img/40-Moderate.jpg" class="img-fluid imgModerate" alt="Moderate Mood with a devil family image">
+                <input type="radio" id="ModerateMood" name="button1" value="ModerateMood">
+                <label for="ModerateMood" class="ModerateMood">Moderate</label>
+            </div>
+            <div class="col-sm">
+                <img src="/Nightmare/Img/9-Sevire.jpg" class="img-fluid imgSevere" alt="Severe Mood with a spooky face image">
+                <input type="radio" id="SevereMood" name="button1" value="SevereMood">
+                <label for="SevereMood" class="SevereMood">Severe</label>
+            </div>
+            <div class="col-sm">
+                <img src="/Nightmare/Img/42-Catatonic.jpg" class="img-fluid imgCatatonic" alt="Catatonic Mood with a spooky Mickey Mouse image">
+                <input type="radio" id="CatatonicMood" name="button1" value="CatatonicMood">
+                <label for="CatatonicMood" class="CatatonicMood">Catatonic</label>
+            </div>
+        </div>
+        
+        <!-- Nightmare duration: One night, One month, One year, Infinity. -->
+        <div class="container">
+            <h3 class="h3">PICK YOUR NIGHTMARE TIME DURATION</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <input type="radio" id="OneNight" name="button2" value="OneNight">
+                <label for="OneNight" class="OneNight">One Night</label>
+            </div>
+            <div class="col-sm">
+                <input type="radio" id="OneWeek" name="button2" value="OneWeek">
+                <label for="OneWeek" class="OneWeek">One Week</label>
+            </div>
+            <div class="col-sm">
+                <input type="radio" id="OneMonth" name="button2" value="OneMonth">
+                <label for="OneMonth" class="OneMonth">One Month</label>
+            </div>
+            <div class="col-sm">
+                <input type="radio" id="OneYear" name="button2" value="OneYear">
+                <label for="OneYear" class="OneYear">One Year</label>
+            </div>
+            <div class="col-sm">
+                <input type="radio" id="Infinity" name="button2" value="Infinity">
+                <label for="Infinity" class="Infinity">Infinity</label>
+            </div>
+        </div>
+        
+        <!-- Generate Button -->
+        <!-- Confirmation: "Regardless of the content of the message, 
+             unique nightmares ware generated and applied. -->
+        <div class="text-center">
+            <button id="generateBtn" onclick="getData()" class="btn nightmareBtn btn-outline-light btn-sm">Generate and apply nightmare!</button>
+            <!-- <button id="generateBtn" type="submit" class="btn nightmareBtn btn-danger btn-md">Generate and apply nightmare!</button> -->
+        </div>
+    </div>
+</div>
+
+<!-- Create a div for the chosen data. Apply the button that links to the homepage. -->
+<!-- Pop Up -->
+<div id="dataDiv" class="text-center popUp">
+    <!-- Dropdown -->
+    <p id="dropName"></p>
+    <p id="recipientName"></p>
+    <p id="messageContent"></p>
+    <p id="nightmareApplied"></p>
+    <!-- Mood -->
+    <p id="userMood"></p>
+    <!-- Duration -->
+    <p id="userDuration"></p>
+    <a href="/Nightmare/ngm.html"><button id="homepageBtn" class="btn homeBtn btn-outline-light btn-sm">Thanks, go back to homepage!</button></a>
+</div>
+
+<!--FOOTER-->
+<footer id="ghost" class="site-footer float-end blurBG">
+    <a href="javascript:BlurFunction(3);"></a>
+    <div class="row row-parent style-dark limit-width no-top-padding no-h-padding no-bottom-padding ">
+      <span class="">Background illustrations courtesy of Petr Valek.  &copy; 2023  <img src="/Nightmare/Logo/Ghost-favicon-yellow.png" alt="Copyrights 2023 Ghost All rights reserved." width="80" height="35"> by Tomasz Preficz - All rights reserved.</span>
+    </div>
+</footer>
+<!--FOOTER ENDS-->
+
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script src="/Nightmare/ngm.js"></script>
+</body>
+</html>
+

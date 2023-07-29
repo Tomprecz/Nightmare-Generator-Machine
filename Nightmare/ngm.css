@@ -1,0 +1,285 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: 'Open Sans' 'Work Sans' 'Tahoma';
+    font-style: normal;
+    font-weight: 200;
+    text-align: center justify;
+    align-items: center;
+    /* color: #313131; */
+    /* color: #ffffff; */
+    /* color: #fff200; */
+    box-sizing: border-box;
+}
+
+/* Background Image */
+body{
+    /* background-image: url(/Images/bgNightmare-bw.jpg); */
+    background-image: url(/Nightmare/Img/bgNightmare.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    /* filter: blur(10px); */
+	}
+    .bgPicture{
+        background-repeat: no-repeat;
+        display: block;
+    }
+
+    /* Border Box */
+    .box {
+        padding: 20px;
+        border-radius: 20px;
+        border: 4px solid #fff200;
+        margin-top: 2%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+        margin-left: 1%;
+    }
+    
+    /* H2 Nightmare Generator Machine */
+    .box h2{
+        text-align: justify, center;
+        font-size: 2.8em;
+        font-weight: 800;
+        color: #fff200;
+        border-radius: 10px;
+        padding: 10px;
+        margin: auto;
+        display: inline-block;
+        /* margin-right: 250px;
+        margin-left: 250px; */
+        /* background-color: #313131; */
+    }
+
+    /* Paragraphs */
+    .recipients, .machine{
+        /* width: 800px; */
+        /* height: auto; */
+        text-align: justify;
+        width: fit-content;
+        height: fit-content;
+        overflow: hidden;
+        font-size: 0.9em;
+        font-weight: 250;
+        color: #313131;
+        border-radius: 10px;
+        padding: 10px;
+        margin: auto;
+        background-color: #fff200;
+        display: inline-block;
+    }
+    /* Search Box */
+    .mb-3{
+        margin: 1%;
+    }
+
+    /* Search Name & Type Name */
+    .sName, .tName{
+        font-size: 0.8em;
+        font-weight: 150;
+        background-color: #fff200;
+    }
+    /* Dropdown Toggle */
+    .dropdown-toggle{
+        font-size: 0.8em;
+        font-weight: 250;
+        background-color: #fff200;
+    }
+    
+    /* Dropdown Menu */
+    .dropdown-menu{
+        font-size: 1em;
+        font-weight: 150;
+        background-color: #ff00c8;
+    }
+
+    /* Dropdown Items */
+    .dropdown-item{
+        font-size: 1em;
+        font-weight: 250;
+        color:#313131
+    }
+
+    /* Dropdown Names */
+    .VP, .AL, .XJ, .KJU{
+        font-size: 1em;
+        font-weight: 250;
+        color:#fbff00
+    }
+
+    /* Add Recipient */
+    .addRecipient{
+        font-size: 0.8em;
+        font-weight: 250;
+        background-color: #fff200;
+    }
+    
+    /* Text Area */
+    .textArea{
+        font-size: 0.9em;
+        font-weight: 150;
+        background-color: #fff200;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .typeWish{
+        font-size: 0.9em;
+        font-weight: 150;
+        margin-left: 1%;
+        color: #313131;
+    }
+
+    /* Nightmare Mood & Time */
+    .h3{
+        text-align: justify, center;
+        font-size: 2.5em;
+        font-weight: 800;
+        color: #fff200;
+        border-radius: 10px;
+        padding: 5px;
+        margin: auto;
+        /* margin-right: 100px;
+        margin-left: 100px; */
+        /* background-color: #ffffff; */
+    }
+
+    /* Mood Illustrations */
+    .imgLight, .imgModerate, 
+    .imgSevere, .imgCatatonic{
+        width: 110px;
+        height: 110px;
+        padding: none;
+        margin: 1%;
+        border-radius: 50%;
+        border: 4px solid #fff200;
+        display: inline-block;
+    }
+
+    /* Radio & Text */
+    .LightMood, .ModerateMood,
+    .SevereMood, .CatatonicMood{
+        width: 110px;
+        height: auto;
+        color: #313131;
+        font-size: 0.9em;
+        font-weight: 250;
+        border-radius: 10px;
+        padding-top: auto;
+        padding-right: 7px;
+        padding-bottom: auto;
+        padding-left: 7px;
+        margin: 10px;
+        background-color: #ff00c8;
+        display: inline-block;
+    }
+    .LightMood:hover, .ModerateMood:hover,
+    .SevereMood:hover, .CatatonicMood:hover{
+        background-color: #fff200;
+    }
+
+    /* Radio Time Duration */
+    .OneNight, .OneWeek, .OneMonth,
+    .OneYear, .Infinity{
+        width: 110px;
+        color: #313131;
+        font-size: 0.9em;
+        font-weight: 250;
+        border-radius: 10px;
+        padding-top: auto;
+        padding-right: 7px;
+        padding-bottom: auto;
+        padding-left: 7px;
+        margin: 10px;
+        background-color: #fff200;
+        display: inline-block;
+    }
+    .OneNight:hover, .OneWeek:hover, 
+    .OneMonth:hover, .OneYear:hover, 
+    .Infinity:hover{
+        background-color: #ff00c8;
+    }
+
+    /* Nightmare Button */
+    .nightmareBtn{
+        font-size: 0.9em;
+        font-weight: 250;
+        /* margin: auto; */
+        margin-top: 16px;
+        margin-bottom: 6px;
+        color: #313131;
+        border: solid #ff00c8;
+        background-color: #ff00c8;
+    }
+
+    /* Homepage Button */
+    .homeBtn{
+        font-size: 0.9em;
+        font-weight: 250;
+        margin-top: 5px;
+        color: #ff00c8;
+        border: solid #ff00c8;
+    }
+
+    /* Reset Button */
+    #dataDiv{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-49%, -50%);
+        width: fit-content;
+        height: fit-content;
+        color: #fff200;
+        /* overflow: auto; */
+        padding: 2%;
+        margin: auto;
+        border-radius: 20px;
+        border: 1px solid #67615a;
+        display: none;
+        background-color: #36322df9;
+        box-shadow: 20px 20px 60px #000000;
+        z-index: 2;
+    }
+    /* Display priority for the Text Area */
+    .z-index1{
+        z-index: 1;
+    }
+
+    /* FOOTER */
+    .site-footer{
+        font-size: 0.8em;
+        font-weight: 100;
+        color: #fff200;
+        /* color: #ffffff; */
+        /* color: #313131; */
+        align-items: right;
+        margin-right: 2%;
+        margin-left: 6%;
+        display: inline-block;
+    }
+
+    /* Blur for the background on click */
+    /* .blur{
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+    }
+    .overlay{
+        position: fixed;
+        display: none;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: #ffffffcc;
+        z-index: 999;
+    } */
+
+    
+    
